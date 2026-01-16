@@ -1,0 +1,4 @@
+﻿parameter_name,min,max,unit,description
+strdailyworktime,7,24,hr,標準工作時間
+turnovertime,15,90,second,任務類別轉換耗時
+taskwaitng,9,9,second,料架移動時間

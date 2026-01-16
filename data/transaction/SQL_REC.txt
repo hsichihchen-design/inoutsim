@@ -1,0 +1,11 @@
+SELECT 
+    FRCD,
+    PARTNO,
+    BINQTY AS QTY,
+    CONVERT(DATE, CRTDT) AS DATE,        -- 提取日期部分
+    CONVERT(TIME(0), CRTDT) AS TIME      -- 提取時間部分 (0 代表不保留毫秒)
+FROM VPMTBIN
+WHERE 
+BRNCD='HC11'
+AND CRTDT > '20250701'
+AND CRTDT < '20250710'
